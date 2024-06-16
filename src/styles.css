@@ -1,1 +1,62 @@
-/* You can add global styles to this file, and also import other style files */
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #f8f9fa;
+      margin: 0;
+      padding: 0;
+    }
+
+    h2 {
+      text-align: center;
+      margin-top: 20px;
+      color: #343a40;
+    }
+
+    .product-list {
+      list-style-type: none;
+      padding: 0;
+      margin: 20px auto;
+      width: 60%;
+      background-color: #fff;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+      border-radius: 8px;
+    }
+
+    .product-list li {
+      padding: 15px;
+      border-bottom: 1px solid #ddd;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    .product-list li:last-child {
+      border-bottom: none;
+    }
+
+    .product-info {
+      font-size: 18px;
+    }
+
+    .btn-group .btn {
+      transition: background-color 0.3s, color 0.3s;
+    }
+
+    .btn-group .btn:hover {
+      background-color: #0056b3;
+      color: #fff;
+    }
+
+    @keyframes fadeInUp {
+      from {
+        opacity: 0;
+        transform: translateY(20px);
+      }
+      to {
+        opacity: 1;
+        transform: translateY(0);
+      }
+    }
+
+    .product-list li {
+      animation: fadeInUp 0.5s ease-in-out;
+    }

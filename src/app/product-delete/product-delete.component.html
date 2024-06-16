@@ -1,0 +1,12 @@
+<!-- product-delete.component.html -->
+<h2>Delete Product</h2>
+<div *ngIf="product; else loading" class="alert-box">
+  <p>Are you sure you want to delete the product "{{ product.name }}"?</p>
+  <div class="button-container">
+    <button (click)="deleteProduct()" class="btn btn-danger">Yes, Delete</button>
+    <button (click)="cancel()" class="btn btn-secondary">Cancel</button>
+  </div>
+</div>
+<ng-template #loading>
+  <p>Loading...</p>
+</ng-template>

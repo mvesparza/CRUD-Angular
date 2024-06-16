@@ -1,0 +1,31 @@
+<!-- product-add.component.html -->
+<h2>Add Product</h2>
+<form (ngSubmit)="addProduct()" class="my-form">
+  <div class="form-group">
+    <label for="name">Name</label>
+    <input id="name" [(ngModel)]="product.name" name="name" required pattern="^[a-zA-Z].*" #nameInput="ngModel" class="form-control">
+    <div *ngIf="nameInput.invalid && (nameInput.dirty || nameInput.touched)" class="alert">
+      <div *ngIf="nameInput.errors?.['required']">
+        Name is required.
+      </div>
+      <div *ngIf="nameInput.errors?.['pattern']">
+        Name must start with a letter.
+      </div>
+    </div>
+  </div>
+
+  <div class="form-group">
+    <label for="price">Price</label>
+    <input id="price" [(ngModel)]="product.price" name="price" type="number" min="1" required #priceInput="ngModel" class="form-control">
+    <div *ngIf="priceInput.invalid && (priceInput.dirty || priceInput.touched)" class="alert">
+      <div *ngIf="priceInput.errors?.['required']">
+        Price is required.
+      </div>
+      <div *ngIf="priceInput.errors?.['min']">
+        Price must be greater than or equal to 1.
+      </div>
+    </div>
+  </div>
+
+  <button type="submit" [disabled]="!nameInput.valid || !priceInput.valid" class="btn btn-primary">Add</button>
+</form>

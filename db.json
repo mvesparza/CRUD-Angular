@@ -1,0 +1,24 @@
+{
+  "products": [
+    {
+      "id": 4,
+      "name": "iPad",
+      "price": 990
+    },
+    {
+      "id": 6,
+      "name": "Watch",
+      "price": 345
+    },
+    {
+      "id": 7,
+      "name": "AirPods",
+      "price": 200
+    },
+    {
+      "id": 9,
+      "name": "AirTag",
+      "price": 120
+    }
+  ]
+}

@@ -1,0 +1,62 @@
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f8f9fa;
+  margin: 0;
+  padding: 0;
+}
+
+h1 {
+  text-align: center;
+  margin-top: 20px;
+  font-size: 36px;
+  color: #333;
+}
+
+nav {
+  text-align: center;
+  margin-top: 20px;
+}
+
+.button {
+  box-shadow: 0 1px 0 0 #ffffff;
+  background: #ffffff linear-gradient(to bottom, #ffffff 5%, #f6f6f6 100%);
+  border-radius: 6px;
+  border: 1px solid #dcdcdc;
+  display: inline-block;
+  cursor: pointer;
+  color: #666666;
+  font-family: 'Arial', sans-serif;
+  font-size: 15px;
+  font-weight: bold;
+  padding: 10px 20px; /* Aumentamos el padding para hacer los botones más grandes */
+  text-decoration: none;
+  text-shadow: 0 1px 0 #ffffff;
+  outline: 0;
+  margin: 0 10px; /* Añadimos margen entre los botones */
+  transition: background-color 0.3s, color 0.3s, box-shadow 0.3s;
+}
+
+.button:hover {
+  background-color: #f0f0f0;
+}
+
+.activebutton {
+  box-shadow: 0 1px 0 0 #dcecfb;
+  background: #bddbfa linear-gradient(to bottom, #bddbfa 5%, #80b5ea 100%);
+  border: 1px solid #84bbf3;
+  color: #ffffff;
+  text-shadow: 0 1px 0 #528ecc;
+}
+
+.activebutton:hover {
+  background-color: #a5cefa;
+}
+
+.content {
+  text-align: center;
+  margin: 40px 0;
+  padding: 20px;
+  background-color: #fff;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  border-radius: 8px;
+}
